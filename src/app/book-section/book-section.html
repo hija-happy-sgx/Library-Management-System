@@ -1,0 +1,10 @@
+<div class="book-section">
+  <h1>Library Collection</h1>
+  <app-search (searchChanged)="onSearch($event)"></app-search>
+
+  <div class="book-grid">
+    <ng-container *ngFor="let book of filteredBooks">
+  <app-book-card [book]="book"></app-book-card>
+</ng-container>
+  </div>
+</div>

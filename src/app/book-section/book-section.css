@@ -1,0 +1,19 @@
+.book-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.book-section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
