@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import booksData from '../books.json';
+import booksData from '../../books.json';
 import { BookCard } from '../book-card/book-card';
 import { NgForm } from '@angular/forms';
 import { CommonModule, NgFor } from '@angular/common';
