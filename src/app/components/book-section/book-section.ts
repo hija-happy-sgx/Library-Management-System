@@ -24,12 +24,21 @@ export class BookSection implements OnInit {
    })
  }
 
-  onSearch(searchTerm: string) {
-    const lowerTerm = searchTerm.toLowerCase();
+ onSearch(searchTerm: string) {
+  if (!searchTerm) {
+    this.filteredBooks = [...this.books];
+  } else {
 
-    this.filteredBooks = this.books.filter(book =>
-      book.title.toLowerCase().includes(lowerTerm)
-    );
+    this.bookService.searchBook(searchTerm).subscribe({
+      next: (response) => {
+        this.filteredBooks = response.books;
+      },
+      error: (err) => {
+        console.error('Search error:', err);
+      }
+    });
   }
+}
+
 }
 
