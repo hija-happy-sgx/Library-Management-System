@@ -1,8 +1,10 @@
 <div class="book-card">
-  <img [src]="book.coverImage" alt="Book Cover" class="book-image">
+  <img [src]="book.image" width="20" 
+  height="30"
+ alt="Book Cover" class="book-image">
   <div class="book-details">
     <h2 class="book-title">{{ book.title }}</h2>
-    <h4 class="book-author">by {{ book.author }}</h4>
-    <p class="book-description">{{ book.description }}</p>
+    <h4 class="book-author">by {{ book.authors }}</h4>
+    <p class="book-description">{{ book.subtitle }}</p>
   </div>
 </div>

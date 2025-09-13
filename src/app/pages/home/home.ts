@@ -9,5 +9,5 @@ import { BookSection } from '../../components/book-section/book-section';
   styleUrl: './home.css'
 })
 export class Home {
-
+  
 }
